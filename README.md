@@ -1,18 +1,25 @@
 # 🛒 Online Retail Data Analysis
 
-A beginner-level data analysis project using real-world online retail transaction data.
+A beginner-friendly data analysis project using real-world online retail transaction data from the UCI Machine Learning Repository.
 
 ## 📌 Project Overview
 
-This project analyzes online retail transaction data to understand sales performance, revenue trends, customer behavior, products, and country-wise sales.
+This project analyzes online retail transaction data to understand:
 
-The project uses Python and Pandas for data cleaning and analysis, and Matplotlib for visualization.
+* Revenue performance
+* Monthly sales trends
+* Country-wise sales
+* Product revenue
+* Customer revenue
+* Business insights
+
+Python and Pandas were used for data cleaning and analysis, while Matplotlib was used to create visualizations.
 
 ## 📊 Dataset
 
 **Dataset:** UCI Online Retail Dataset
 
-The dataset contains real-world online retail transaction data from 2010–2011.
+The dataset contains real-world online retail transactions from 2010–2011.
 
 ## 🛠️ Technologies Used
 
@@ -20,11 +27,12 @@ The dataset contains real-world online retail transaction data from 2010–2011.
 * Pandas
 * Matplotlib
 * UCI Machine Learning Repository
-* Git & GitHub
+* Git
+* GitHub
 
 ## 🧹 Data Cleaning
 
-The following steps were performed:
+The following data cleaning steps were performed:
 
 * Checked missing values
 * Removed rows with missing product descriptions
@@ -37,12 +45,43 @@ The following steps were performed:
 
 ## 📈 Analysis Performed
 
-* Total revenue analysis
-* Monthly revenue analysis
-* Country-wise revenue analysis
-* Top products by revenue
-* Customer-wise revenue analysis
-* Monthly revenue visualization
+### Revenue Analysis
+
+Calculated total revenue and analyzed revenue performance over time.
+
+### Monthly Revenue Analysis
+
+Analyzed revenue by year and month to identify high and low performing months.
+
+### Country-wise Analysis
+
+Compared revenue across different countries.
+
+### Product Analysis
+
+Identified the highest-revenue items in the dataset.
+
+### Customer Analysis
+
+Identified customers with the highest recorded revenue.
+
+## 📊 Visualizations
+
+### Monthly Revenue
+
+![Monthly Revenue](monthly_revenue.png)
+
+### Top 10 Countries by Revenue
+
+![Country Revenue](country_revenue.png)
+
+### Top 10 Items by Revenue
+
+![Top Products Revenue](top_products_revenue.png)
+
+### Top 10 Customers by Revenue
+
+![Top Customers Revenue](top_customers_revenue.png)
 
 ## 💡 Key Business Insights
 
@@ -55,29 +94,7 @@ The following steps were performed:
 | Top Customer ID           |          14646 |
 | Top Customer Revenue      |    £280,206.02 |
 
-## 📁 Project Files
-
-```text
-online_retail_analysis/
-│
-├── online_retail_analysis.py
-├── cleaned_online_retail.csv
-└── README.md
-```
-
-### `online_retail_analysis.py`
-
-Python script containing the complete data cleaning, analysis, calculations, and visualization code.
-
-### `cleaned_online_retail.csv`
-
-Cleaned sales dataset generated from the analysis process.
-
-### `README.md`
-
-Project documentation and key results.
-
-## 📊 Project Workflow
+## 🔄 Project Workflow
 
 ```text
 Real Dataset
@@ -92,18 +109,32 @@ Revenue Analysis
      ↓
 Customer & Product Analysis
      ↓
-Visualization
+Data Visualization
      ↓
 Business Insights
      ↓
 GitHub
 ```
 
+## 📁 Project Files
+
+```text
+online-retail-data-analysis/
+│
+├── online_retail_analysis.py
+├── cleaned_online_retail.csv
+├── monthly_revenue.png
+├── country_revenue.png
+├── top_products_revenue.png
+├── top_customers_revenue.png
+└── README.md
+```
+
 ## 🎯 Conclusion
 
-This project demonstrates a complete beginner-level data analysis workflow using real-world data.
+This project demonstrates a complete beginner-level data analysis workflow using real-world retail transaction data.
 
-It shows how Python and Pandas can be used to clean data, calculate business metrics, analyze trends, and generate useful business insights.
+It shows how Python and Pandas can be used to clean data, transform data, calculate business metrics, analyze trends, and create visualizations for business decision-making.
 
 ## 👨‍💻 Author
 

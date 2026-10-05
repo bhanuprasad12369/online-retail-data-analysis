@@ -150,6 +150,29 @@ country_sales = country_sales.sort_values(
 print("\nCountry-wise Revenue:")
 print(country_sales.head(10))
 
+# Country-wise Revenue Chart
+
+country_revenue = (
+    sales_df.groupby("Country")["TotalAmount"]
+    .sum()
+    .sort_values(ascending=False)
+    .head(10)
+)
+
+plt.figure(figsize=(10, 6))
+
+country_revenue.plot(kind="bar")
+
+plt.title("Top 10 Countries by Revenue")
+plt.xlabel("Country")
+plt.ylabel("Revenue (£)")
+plt.xticks(rotation=45)
+plt.tight_layout()
+
+plt.savefig("country_revenue.png")
+
+plt.show()
+
 # Top products by revenue
 product_sales = sales_df.groupby("Description")["TotalAmount"].sum().reset_index()
 
@@ -160,6 +183,28 @@ product_sales = product_sales.sort_values(
 
 print("\nTop 10 Products by Revenue:")
 print(product_sales.head(10))
+
+# Top 10 Products Revenue Chart
+
+top_products = product_sales.head(10)
+
+plt.figure(figsize=(10, 6))
+
+plt.bar(
+    top_products["Description"],
+    top_products["TotalAmount"]
+)
+
+plt.title("Top 10 Products by Revenue")
+plt.xlabel("Product")
+plt.ylabel("Revenue (£)")
+plt.xticks(rotation=75)
+
+plt.tight_layout()
+
+plt.savefig("top_products_revenue.png")
+
+plt.show()
 
 # Customer-wise revenue analysis
 customer_sales = sales_df.dropna(subset=["CustomerID"])
@@ -173,6 +218,29 @@ customer_sales = customer_sales.sort_values(
 
 print("\nTop 10 Customers by Revenue:")
 print(customer_sales.head(10))
+
+# Top 10 Customers Revenue Chart
+
+top_customers = customer_sales.head(10)
+
+plt.figure(figsize=(10, 6))
+
+plt.bar(
+    top_customers["CustomerID"].astype(str),
+    top_customers["TotalAmount"]
+)
+
+plt.title("Top 10 Customers by Revenue")
+plt.xlabel("Customer ID")
+plt.ylabel("Revenue (£)")
+plt.xticks(rotation=45)
+
+plt.tight_layout()
+
+plt.savefig("top_customers_revenue.png")
+
+plt.show()
+
 
 # Monthly revenue chart
 plt.figure(figsize=(10, 5))
@@ -189,6 +257,7 @@ plt.ylabel("Revenue (£)")
 plt.xticks(rotation=45)
 
 plt.tight_layout()
+plt.savefig("monthly_revenue.png")
 plt.show()
 
 # Export cleaned sales dataset
