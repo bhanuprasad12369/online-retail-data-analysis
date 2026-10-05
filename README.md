@@ -1,60 +1,112 @@
-# Online Retail Data Analysis
+# 🛒 Online Retail Data Analysis
 
-## Project Overview
+A beginner-level data analysis project using real-world online retail transaction data.
 
-This project analyzes real-world online retail sales data using Python and Pandas.
+## 📌 Project Overview
 
-The goal is to understand sales performance, customer behavior, product revenue, and country-wise revenue.
+This project analyzes online retail transaction data to understand sales performance, revenue trends, customer behavior, products, and country-wise sales.
 
-## Dataset
+The project uses Python and Pandas for data cleaning and analysis, and Matplotlib for visualization.
 
-Dataset: UCI Online Retail Dataset
+## 📊 Dataset
 
-The dataset contains online retail transaction data from 2010 to 2011.
+**Dataset:** UCI Online Retail Dataset
 
-## Technologies Used
+The dataset contains real-world online retail transaction data from 2010–2011.
+
+## 🛠️ Technologies Used
 
 * Python
 * Pandas
 * Matplotlib
 * UCI Machine Learning Repository
+* Git & GitHub
 
-## Data Cleaning
+## 🧹 Data Cleaning
 
-The following data cleaning steps were performed:
+The following steps were performed:
 
 * Checked missing values
 * Removed rows with missing product descriptions
 * Removed duplicate rows
-* Converted InvoiceDate to datetime format
+* Converted `InvoiceDate` to datetime format
 * Identified negative quantities as returns/cancellations
-* Removed non-positive quantities for sales analysis
-* Removed non-positive unit prices for sales analysis
+* Removed non-positive quantities from sales analysis
+* Removed non-positive unit prices from sales analysis
+* Created a `TotalAmount` column
 
-## Analysis Performed
+## 📈 Analysis Performed
 
-* Total revenue calculation
+* Total revenue analysis
 * Monthly revenue analysis
 * Country-wise revenue analysis
 * Top products by revenue
 * Customer-wise revenue analysis
 * Monthly revenue visualization
 
-## Key Results
+## 💡 Key Business Insights
 
-* Total Revenue: £10,636,228.14
-* Sales Rows After Cleaning: 524,231
-* Highest Revenue Country: United Kingdom
-* Highest Revenue Month: November 2011
-* Top Customer ID: 14646
-* Top Customer Revenue: £280,206.02
+| Metric                    |         Result |
+| ------------------------- | -------------: |
+| Total Revenue             | £10,636,228.14 |
+| Sales Rows After Cleaning |        524,231 |
+| Highest Revenue Country   | United Kingdom |
+| Highest Revenue Month     |  November 2011 |
+| Top Customer ID           |          14646 |
+| Top Customer Revenue      |    £280,206.02 |
 
-## Project Files
+## 📁 Project Files
 
-* `online_retail_analysis.py` — Python analysis code
-* `cleaned_online_retail.csv` — Cleaned sales dataset
-* `README.md` — Project documentation
+```text
+online_retail_analysis/
+│
+├── online_retail_analysis.py
+├── cleaned_online_retail.csv
+└── README.md
+```
 
-## Conclusion
+### `online_retail_analysis.py`
 
-This project demonstrates how Python and Pandas can be used to clean, analyze, and visualize real-world retail data and generate useful business insights.
+Python script containing the complete data cleaning, analysis, calculations, and visualization code.
+
+### `cleaned_online_retail.csv`
+
+Cleaned sales dataset generated from the analysis process.
+
+### `README.md`
+
+Project documentation and key results.
+
+## 📊 Project Workflow
+
+```text
+Real Dataset
+     ↓
+Data Understanding
+     ↓
+Data Cleaning
+     ↓
+Data Transformation
+     ↓
+Revenue Analysis
+     ↓
+Customer & Product Analysis
+     ↓
+Visualization
+     ↓
+Business Insights
+     ↓
+GitHub
+```
+
+## 🎯 Conclusion
+
+This project demonstrates a complete beginner-level data analysis workflow using real-world data.
+
+It shows how Python and Pandas can be used to clean data, calculate business metrics, analyze trends, and generate useful business insights.
+
+## 👨‍💻 Author
+
+**Bhanu Satya Prasad Reddy**
+
+Aspiring Data Engineer
